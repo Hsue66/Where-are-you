@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hsue.sue.pagelayout" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="어디뒀지?"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoadingActivity"
+            android:label="어디뒀지?"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_loading" >
+        </activity>
+        <activity
+            android:name=".EditActivity"
+            android:label="@string/title_activity_edit" >
+        </activity>
+        <activity
+            android:name=".FolderActivity"
+            >
+        </activity>
+    </application>
+
+</manifest>

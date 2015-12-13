@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.hsue.sue.pagelayout.EditActivity">
+
+    <TextView
+        android:text="Pro"
+        android:id="@+id/e_product"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/spinner"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/e_product"
+        android:layout_centerHorizontal="true">
+    </Spinner>
+
+    <!--<EditText android:text="Folder"
+        android:id="@+id/e_folder"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/e_product"
+        android:layout_alignLeft="@+id/e_memo"
+        android:layout_alignStart="@+id/e_memo"
+        android:layout_marginTop="20dp" />-->
+
+    <EditText android:text="Serial"
+        android:id="@+id/e_serial"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp" />
+
+    <EditText android:text="Memo"
+        android:id="@+id/e_memo"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_alignTop="@+id/e_serial"
+        android:layout_alignLeft="@+id/e_serial"
+        android:layout_alignStart="@+id/e_serial" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/e_save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/e_memo"
+        android:layout_alignStart="@+id/e_memo" />
+
+</RelativeLayout>

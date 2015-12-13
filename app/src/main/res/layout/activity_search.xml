@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hsue.sue.pagelayout.SearchActivity">
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/back22"/>
+
+    <Button
+        android:text="     "
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#00ff0000"
+        android:id="@+id/folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="     "
+        android:enabled="false"
+        android:id="@+id/search"
+        android:background="#00ff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="      "
+        android:background="#00ff0000"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/searchWord"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:layout_alignBottom="@+id/searchButton"
+        android:layout_alignLeft="@+id/folder"
+        android:layout_alignStart="@+id/folder" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색"
+        android:layout_below="@+id/register"
+        android:layout_alignLeft="@+id/register"
+        android:layout_alignStart="@+id/register" />
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchWord"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">/
+
+    </ListView>
+
+
+</RelativeLayout>
